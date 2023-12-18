@@ -1,0 +1,39 @@
+FUNDAMENTOS DO JS: tipos; variáveis; funções
+
+-- VARIÁVEIS;
+-- TIPOS DE DADOS;
+-- NodeJS;
+-- OPERADORES;
+-- FUNÇÕES.
+
+Dica: podemos utilizar o número PI através do código Math.PI
+
+Divisão por zero não é um erro em JavaScript: ele simplesmente retorna “Infinity”. No entanto, há uma exceção: zero dividido por zero não tem um valor bem definido e o resultado dessa operação é o valor especial não numérico NaN.
+
+var a = 10
+var b = 0
+console.log(a/b) // Infinity
+
+var a = 0
+var b = 0
+console.log(a/b) // NaN
+
+
+O Unicode tem códigos específicos para “cifrar” e “decifrar” caracteres de mais de 150 idiomas antigos e modernos, e também diversos outros conjuntos de caracteres como símbolos matemáticos e inclusive emojs. A Wikipedia tem uma lista extensa de todas as tabelas com os códigos Unicode e os caracteres, como por exemplo os que estão abaixo:
+
+caractere	UTF-16		descrição oficial
+$	        U+0024		DOLLAR SIGN
+A	        U+0041		LATIN CAPITAL LETTER A
+✅	        U+2705		CHECK MARK
+ぁ	        U+3041		HIRAGANA LETTER SMALL A
+
+const cifrao = '\u0024'
+const aMaiusculo = '\u0041'
+const tique = '\u2705'
+const hiragana = '\u3041'
+
+console.log(cifrao)
+console.log(aMaiusculo)
+console.log(tique)
+console.log(hiragana)
+
